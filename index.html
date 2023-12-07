@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* td{
+            text-decoration: line-through;
+        } */
+        table{
+            width: 270px;
+            /* border: 3px solid grey; */
+            border-collapse:collapse;
+            height: 400px;
+            text-align: center;
+            border-radius: 20px;
+        }
+        td{
+            width: 130px !important;
+            border: 3px solid black;
+            height: 95px;
+            font-size: 30px;
+            background-image: linear-gradient(to top, white, red);
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5), 4px 4px 4px rgba(0, 0, 0, 0.2);
+
+            
+        }
+       button{
+        color: white;
+        background-color: black;
+        border: 2px solid white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        width: 38%;
+        height: 50px;
+        border-radius: 20px;
+        
+       }
+       input {
+        /* background-color: black; */
+         color: white; 
+         width: 65%;
+         background: none;
+         height: 50px;
+           /* border: 3px solid white; */
+           /* border-radius: 5px; */
+           font-size: 20px;
+           text-align: center;
+           background-image: linear-gradient(to top, white, white);
+  
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5), 4px 4px 4px rgba(0, 0, 0, 0.2);
+
+       }
+       /* .card {
+      /* background-image: linear-gradient(to right, black, grey ); */
+      /* border: 3px solid black;
+      border-radius: 20px;
+    }  */
+     
+       
+    </style>
+</head>
+
+<body style="background-color: darkorchid; background-image: url(./MS.png); background-repeat: no-repeat; background-position-x: left;">
+    <br>
+   
+    <!-- <div>
+        hello div
+        <p>Hello user</p>
+    </div> -->
+    <center>
+        <div class="card" style="width: 18rem; height: 50%;">
+
+    <div  id="userinput">
+        <h3>FIRST USER: X</h3>
+        <input type="text" placeholder="Enter First User"  id="firstUser"/>
+        <h3>SECOND USER: 0</h3>
+        <input  type="text" placeholder="Enter Second User" id="secondUser"/>
+    <br>
+    <br>
+        <button onclick="StartGame()">Start Game</button>
+        <br>
+    </div>
+    </div>
+
+    <br/>
+
+    
+
+
+    <table id="game" style="display: none;">
+        <tr>
+            <td onclick="Check(this)"></td>
+            <td onclick="Check(this)"></td>
+            <td onclick="Check(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="Check(this)"></td>
+            <td onclick="Check(this)"></td>
+            <td onclick="Check(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="Check(this)"></td>
+            <td onclick="Check(this)"></td>
+            <td onclick="Check(this)"></td>
+        </tr>
+    </table>
+</center>
+    <script src="app.js"></script>
+</body>
+
+</html>
